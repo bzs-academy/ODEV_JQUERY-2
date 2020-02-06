@@ -1,0 +1,53 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    
+}
+.content {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.content:after {
+    content: '';
+    background-image: url('bg.jpg');
+    background-size: cover;
+    opacity: 0.3;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;  
+}
+.box {
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+form {
+    margin-top: 10px;
+    padding:15px;
+}
+form p {
+    font-size: 35px; 
+}
+#currency1, #currency2 {
+    font-size: 16px; 
+}
+
+.btn .fas {
+    transform: rotate(90deg);
+}
+
+.loadEffect {
+    display:    none;
+    position:   fixed;
+    z-index:    1000;
+    top:        0;
+    left:       0;
+    height:     100%;
+    width:      100%;
+    background: url('./loading.gif') 50% 50% no-repeat;
+}
